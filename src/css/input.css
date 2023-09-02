@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Modern Aesthetic - Demo Version", sans-serif;
+}
+
+.bg-text-span::before {
+  content: url("../../dist/svg/Vector-bg.svg");
+  @apply absolute top-1/2 -translate-y-1/2 -right-2 w-24 -z-10 lg:w-36 xl:w-44;
+}
+
+.hamburger-line {
+  @apply block my-2 h-[2px] bg-dark rounded-full;
+}
+
+/* .hamburger-active > span:nth-child(1) {
+  @apply w-[30px] -rotate-[22deg];
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply w-[30px] rotate-[22deg];
+} */
+
+.hamburger-active > span:nth-child(1) {
+  @apply h-1 translate-y-[6px];
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-50 backdrop-blur-sm;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}

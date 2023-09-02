@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami</title>
+    <link href="../../dist/css/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="absolute top-0 left-0 flex items-center py-2 w-full bg-transparent z-10">
+      <div class="container">
+        <div class="relative flex justify-between items-center">
+          <div class="px-4">
+            <a href="../../index.html#hero" class="flex justify-center items-center">
+              <img src="../../dist/svg/Logo UD Fahreza.svg" alt="Logo" class="w-6 lg:w-8" />
+              <span class="text-sm text-dark lg:text-lg">UD Fahreza</span>
+            </a>
+          </div>
+
+          <div class="flex items-start px-4">
+            <a href="" class="absolute top-1/2 -translate-y-1/2 right-[68px] flex justify-center items-center gap-2 p-1 pl-3 border-2 border-dark rounded-full font-inter group lg:hidden">
+              <span class="text-xs font-medium text-dark">Login</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="p-1 w-6 h-6 bg-dark text-white rounded-full transition duration-300 ease-in-out group-hover:rotate-45">
+                <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <button id="hamburger" name="hamburger" type="button" class="block absolute top-1/2 -translate-y-1/2 right-4 lg:hidden" onclick="hamburgerNav(this)">
+              <span class="hamburger-line w-10 origin-top-right transition duration-500 ease-in-out"></span>
+              <span class="hamburger-line ml-auto w-[25px] origin-bottom-right transition duration-500 ease-in-out"></span>
+            </button>
+
+            <nav id="nav-menu-mobile" class="hidden justify-center items-center absolute top-full right-0 py-6 w-full h-screen bg-white bg-opacity-50 backdrop-blur-sm rounded-lg lg:hidden">
+              <ul class="flex justify-center items-center flex-wrap gap-1 w-full max-w-fit font-inter">
+                <li class="group w-1/3">
+                  <a
+                    href="../../index.html#hero"
+                    class="block py-6 px-4 bg-dark text-base font-medium text-white text-center rounded-tl-3xl rounded-lg group-hover:bg-primary group-hover:bg-opacity-50 group-hover:backdrop-blur-sm group-hover:text-secondary transition duration-300 ease-in-out"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group w-1/3">
+                  <a
+                    href="../../index.html#about"
+                    class="block py-6 px-4 bg-dark text-base font-medium text-white text-center rounded-tr-3xl rounded-lg group-hover:bg-primary group-hover:bg-opacity-50 group-hover:backdrop-blur-sm group-hover:text-secondary transition duration-300 ease-in-out"
+                    >Tentang Kami</a
+                  >
+                </li>
+                <li class="group w-1/3">
+                  <a
+                    href="../../index.html#product"
+                    class="block py-6 px-4 bg-dark text-base font-medium text-white text-center rounded-bl-3xl rounded-lg group-hover:bg-primary group-hover:bg-opacity-50 group-hover:backdrop-blur-sm group-hover:text-secondary transition duration-300 ease-in-out"
+                    >Produk</a
+                  >
+                </li>
+                <li class="group w-1/3">
+                  <a
+                    href="../../index.html#contact"
+                    class="block py-6 px-4 bg-dark text-base font-medium text-white text-center rounded-br-3xl rounded-lg group-hover:bg-primary group-hover:bg-opacity-50 group-hover:backdrop-blur-sm group-hover:text-secondary transition duration-300 ease-in-out"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <nav id="nav-menu" class="hidden lg:block lg:static lg:max-w-full">
+              <ul class="flex items-center gap-2 font-inter py-2 px-3 border-2 border-dark rounded-full">
+                <li class="group">
+                  <a href="../../index.html#hero" class="block py-3 px-5 bg-dark text-sm font-medium text-white rounded-full group-hover:bg-dark group-hover:text-white transition duration-300 ease-in-out">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="../../index.html#about" class="block py-3 px-5 text-sm font-medium text-dark rounded-full group-hover:bg-dark group-hover:text-white transition duration-300 ease-in-out">Tentang Kami</a>
+                </li>
+                <li class="group">
+                  <a href="../../index.html#product" class="block py-3 px-5 text-sm font-medium text-dark rounded-full group-hover:bg-dark group-hover:text-white transition duration-300 ease-in-out">Portfolio</a>
+                </li>
+                <li class="group">
+                  <a href="../../index.html#contact" class="block py-3 px-5 text-sm font-medium text-dark rounded-full group-hover:bg-dark group-hover:text-white transition duration-300 ease-in-out">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <a href="" class="hidden justify-center items-center gap-2 p-2 pl-4 border-2 border-dark rounded-full font-inter group lg:flex">
+            <span class="text-sm font-medium text-dark">Login</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="p-1 w-7 h-7 bg-dark text-white rounded-full transition duration-300 ease-in-out group-hover:rotate-45">
+              <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section id="header" class="py-16 mt-14 bg-primary lg:py-24 lg:mt-20">
+      <div class="container">
+        <div class="px-4 w-full text-center">
+          <h2 class="text-2xl text-dark lg:text-4xl">Tentang Kami</h2>
+          <p class="text-xs font-medium text-dark font-inter lg:text-sm">Beranda / <span class="font-semibold text-secondary">Tentang Kami</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="pt-16 pb-5 lg:pt-24 lg:pb-10">
+      <div class="container">
+        <div class="px-4 mb-8 w-full lg:mb-20">
+          <img src="../../dist/img/image - about.jpg" alt="About Image" class="w-full h-56 object-cover rounded-2xl lg:h-[680px] lg:rounded-5xl" />
+        </div>
+        <div class="px-4 w-full">
+          <h2 class="mb-4 text-xl text-dark lg:text-3xl">Tentang Kami</h2>
+          <p class="mb-3 text-xs text-dark font-inter lg:text-sm">
+            UD Fahreza, terletak di Jl. Wijaya Kusuma No. 9 Komet, Banjarbaru Utara, Banjarbaru, Kalimantan Selatan, adalah toko fotocopy yang terkemuka. Dengan pengalaman bertahun-tahun, kami menyediakan layanan fotokopi berkualitas
+            tinggi, cetakan dokumen, dan berbagai solusi dokumen lainnya. Kami berkomitmen untuk memberikan hasil yang tajam dan tepat waktu untuk setiap kebutuhan dokumen Anda.
+          </p>
+          <p class="text-xs text-dark font-inter lg:text-sm">
+            Dengan peralatan modern dan staf terampil, kami siap memenuhi semua kebutuhan fotokopi, cetakan dokumen, dan layanan terkait lainnya dengan profesionalisme dan kepuasan pelanggan sebagai prioritas utama kami.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="maps" class="pt-8 pb-16 lg:pt-16 lg:pb-20">
+      <div class="container">
+        <div class="flex justify-center items-center flex-wrap gap-8 mx-auto w-3/4">
+          <div class="px-4 w-full text-center">
+            <h2 class="text-xl text-dark lg:text-3xl">Lokasi Toko Kami</h2>
+            <p class="text-xs text-dark font-inter lg:text-sm">Dibawah ini lokasi toko kami, silahkan langsung saja datang ke tempat kami.</p>
+          </div>
+          <div class="px-4 w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.081977646902!2d114.83622945556786!3d-3.441459077981306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de681a68704a04d%3A0x9c4f98f61d31ec17!2sUd.%20Fahreza!5e0!3m2!1sid!2sid!4v1693638539534!5m2!1sid!2sid"
+              class="mx-auto h-44 border border-dark rounded-2xl lg:w-3/4 lg:h-80"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pt-16 bg-primary lg:pt-16">
+      <div class="container">
+        <div class="px-4 w-full">
+          <div class="flex justify-center items-center">
+            <img src="../../dist/svg/Logo UD Fahreza.svg" alt="Logo" class="h-12 text-white lg:h-16" />
+            <span class="text-lg text-dark lg:text-xl">UD Fahreza</span>
+          </div>
+          <div class="flex justify-center items-center gap-8 mt-8 font-inter lg:gap-16 lg:mt-11">
+            <a href="../../index.html#hero" class="text-sm font-bold text-dark transition duration-300 ease-in-out hover:text-secondary lg:text-lg">Home</a>
+            <a href="../../index.htmlabout" class="text-sm font-bold text-dark transition duration-300 ease-in-out hover:text-secondary lg:text-lg">About</a>
+            <a href="../../index.htmlproduct" class="text-sm font-bold text-dark transition duration-300 ease-in-out hover:text-secondary lg:text-lg">Product</a>
+            <a href="../../index.htmlcontact" class="text-sm font-bold text-dark transition duration-300 ease-in-out hover:text-secondary lg:text-lg">Contact</a>
+          </div>
+          <div class="flex justify-center items-center flex-wrap gap-3 pt-3 mt-5 mx-auto w-fit border-t-2 border-dark lg:gap-7">
+            <div class="flex items-center gap-1 lg:gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+                <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+              </svg>
+              <span class="text-xs font-semibold text-dark font-inter lg:text-sm">info@udfahreza.com</span>
+            </div>
+            <div class="flex items-center gap-1 lg:gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path
+                  fill-rule="evenodd"
+                  d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="text-xs font-semibold text-dark font-inter lg:text-sm">+6285194587771</span>
+            </div>
+            <div class="flex items-center gap-1 lg:gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path
+                  fill-rule="evenodd"
+                  d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 002.273 1.765 11.842 11.842 0 00.976.544l.062.029.018.008.006.003zM10 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="text-xs font-semibold text-dark font-inter lg:text-sm">Jl. Wijaya Kusuma No. 9 Komet Banjarbaru Utara, Banjarbaru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-3 mt-10 w-full bg-secondary">
+        <p class="text-[10px] text-white font-inter text-center lg:text-xs">© copyright 2023 Muhammad Hasan [hasan.com - muhammadhas772@gmail.com]️</p>
+      </div>
+    </footer>
+
+    <script src="../../dist/js/script.js"></script>
+  </body>
+</html>
