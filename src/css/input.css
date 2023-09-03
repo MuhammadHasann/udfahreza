@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Modern Aesthetic - Demo Version";
+  src: url("../../dist/font/modernaestheticdemoversionregular-2oaed.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Modern Aesthetic - Demo Version", sans-serif;
 }
 
 .bg-text-span::before {
   content: url("../../dist/svg/Vector-bg.svg");
-  @apply absolute top-1/2 -translate-y-1/2 -right-2 w-24 -z-10 lg:w-36 xl:w-44;
+  @apply absolute top-1/2 -translate-y-1/2 -right-2 w-20 -z-10 lg:w-36 xl:w-44;
 }
 
 .hamburger-line {

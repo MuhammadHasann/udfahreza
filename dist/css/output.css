@@ -764,6 +764,14 @@ video {
   height: 100vh;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .w-1\/3 {
   width: 33.333333%;
 }
@@ -1021,6 +1029,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1108,6 +1120,14 @@ video {
   padding-top: 2rem;
 }
 
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1119,11 +1139,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-\[10px\] {
@@ -1236,6 +1251,16 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@font-face {
+  font-family: "Modern Aesthetic - Demo Version";
+
+  src: url("../../dist/font/modernaestheticdemoversionregular-2oaed.otf") format("woff2");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
 body {
   font-family: "Modern Aesthetic - Demo Version", sans-serif;
 }
@@ -1246,7 +1271,7 @@ body {
   top: 50%;
   right: -0.5rem;
   z-index: -10;
-  width: 6rem;
+  width: 5rem;
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1335,6 +1360,11 @@ body {
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(82 82 82 / var(--tw-text-opacity));
+}
+
+.focus\:border-slate-900:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 23 42 / var(--tw-border-opacity));
 }
 
 .focus\:bg-primary:focus {
@@ -1604,6 +1634,10 @@ body {
 
   .lg\:rounded-tl-\[120px\] {
     border-top-left-radius: 120px;
+  }
+
+  .lg\:p-5 {
+    padding: 1.25rem;
   }
 
   .lg\:px-7 {
